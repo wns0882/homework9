@@ -4,7 +4,7 @@
 typedef struct node { //node 구조체 정의
 	int key; //key값을 입력 받을 변수 선언
 	struct node *left; //구조체 포인터 변수 선언 ->좌측 노드
-	struct node *right;
+	struct node *right; //구조체 포인터 변수 선언 -> 우측 노드
 } Node;
 
 int initializeBST(Node** h);

@@ -196,7 +196,7 @@ int deleteLeafNode(Node* head, int key)//리프노드를 삭제하는 함수
 
 	if (head->left == NULL) { //값이 존재하지 않는 경우 메세지 출력
 		printf("\n Nothing to delete!!\n");
-		return -1;
+		return -1; 
 	}
 
 	/* head->left is the root */
@@ -225,7 +225,7 @@ int deleteLeafNode(Node* head, int key)//리프노드를 삭제하는 함수
 				free(ptr);//메모리해제
 			}
 			else {//리프노드가 아닌경우 
-				printf("the node [%d] is not a leaf \n", ptr->key);
+				printf("the node [%d] is not a leaf \n", ptr->key); //입력한 값이 리프노드에 존재하지 않는다는 메세지 출력
 			}
 			return 1;
 		}
